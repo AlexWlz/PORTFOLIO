@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Portfolio Alexis WALLEZ</title>
+        <link rel = "icon" href="/img/lessonsharing-logo-white-alpha.png" type = "image/x-icon">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="./style.css" rel="stylesheet" type="text/CSS">
+    </head>
+
+    <body >
+        <div id="op" class="op display_none" onclick="close_drop(); close_menu();"></div>
+
+        <header>
+            <a class="name" href="#"><h2 class="tablinks" onclick="openCity(event, 'moi'); close_drop();">Alexis WALLEZ</h2></a>
+            <div class="bar"></div>
+            <a class="tablinks" class="tablinks" onclick="openCity(event, 'acceuil'); close_drop();" id="defaultOpen">Acceuil</a>
+            <div class="bar"></div>
+
+            <nav class="navbar" role="navigation">
+                <!-- Menu -->
+                <div class="conteneurDrop">
+                    <ul>
+                        <li><a class="tablinks" onclick="openCity(event, 'bts'); close_drop();">BTS SIO</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="conteneurDrop">
+                    <ul>
+                        <li><a id="text1">Entreprise</a>
+                            <ul class="dropdown1 display_none drop" id="drop1" aria-label="submenu">
+                                <li><a class="tablinks" onclick="openCity(event, 'entreprise_presentation'); close_drop();">Présentation</a></li>
+                                <li><a class="tablinks" onclick="openCity(event, 'entreprise_projet'); close_drop();">Projets</a></li>
+                                <div class="close">
+                                    <span class="croix1 croix">&#10006</span>
+                                </div>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="conteneurDrop">
+                    <ul>
+                        <li><a id="text2">Formation</a>
+                            <ul class="dropdown2 display_none drop" id="drop2" aria-label="submenu">
+                                <li><a class="tablinks" onclick="openCity(event, 'formation_projet'); close_drop();">Projets</a></li>
+                                <div class="close">
+                                    <span class="croix2 croix">&#10006</span>
+                                </div>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="conteneurDrop">
+                    <ul>
+                        <li><a id="text3">Veilles</a>
+                            <ul class="dropdown3 display_none drop" id="drop3" aria-label="submenu">
+                                <li><a class="tablinks" onclick="openCity(event, 'technologie'); close_drop();">Technologique</a></li>
+                                <li><a class="tablinks" onclick="openCity(event, 'juridique'); close_drop();">Juridique</a></li>
+                                <div class="close">
+                                    <span class="croix3 croix">&#10006</span>
+                                </div>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            <!-- Menu -->
+            </nav>
+
+        </nav>
+    </header>
+
+
+        <div class="scroll" id="scroll">
+
+            <!-- Acceuil -->
+            <div id="acceuil" class="tabcontent">
+                <div class="card">
+                    <div class="conteneur_logo_card">
+                        <img class="logo_card" src="/img/sac.PNG" alt="Logo SLAM">
+                    </div>
+                    <h1 class="title_card">Protfolio</h1>
+                    <div class="bar1"></div>
+                    <div class="conteneur_text">
+                        <h1 class="text">
+                            BTS SIO SLAM
+                        </h1>
+                        <h1 class="text">
+                            2021 - 2023
+                        </h1>
+                    </div>
+                </div>
+            </div>
+            <!-- Acceuil -->
+
+            <!-- BTS SIO -->
+            <div id="bts" class="tabcontent">
+                <div class="contener_card_title">
+                    <div class="card_title">
+                        <div class="conteneur_logo_card">
+                            <h1 class="logo_bts">BTS</h1>
+                        </div>
+                        <h1 class="title_card">Services d'informatiques aux Organisations</h1>
+                        <div class="bar1"></div>
+                        <h3 class="text">
+                            Un diplôme de niveau BAC plus 2 reconnu au niveau national. Le programme évolue en fonction de la localisation et du rôle des TIC (Technologies de l'Information et de la Communication) et propose deux spécialisations distinctes : SISR et SLAM.
+                            En plus des matières liées à l'ingénierie informatique, la Cybersécurité, la formation propose des cours de culture générale, d'anglais (avec possibilité de poursuivre en LV2), de mathématiques appliquées à l'informatique, et d'outils d'analyse économique, de gestion et juridique. Service des technologies de l'information.
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="contener_card">
+                    <div class="card">
+                        <div class="conteneur_logo_card">
+                            <img class="logo_card" src="/img/slam.png" alt="Logo SLAM">
+                        </div>
+                        <h1 class="title_card">SLAM</h1>
+                        <div class="bar1"></div>
+                        <h3 class="text">
+                            L’option Solutions Logicielles et Applications étiers forme des spécialistes des logiciels (rédaction d’un cahier des charges, formulation des besoins et spécifications, développement, intégration au sein de la société).
+                        </h3>
+                    </div>
+
+                    <div class="card">
+                        <div class="conteneur_logo_card">
+                            <img class="logo_card" src="/img/sisr.png" alt="Logo SLAM">
+                        </div>
+                        <h1 class="title_card">SISR</h1>
+                        <div class="bar1"></div>
+                        <h3 class="text">
+                            L’option Solutions d’Infrastructure, Systèmes et Réseaux forme des professionnels des réseaux et des équipements informatiques (installation, maintenance, sécurité). A la sortie du BTS SIO SISR, être capable de gérer et d'administrer le réseau d'une entreprise et d'en assurer la sécurité et la maintenance.
+                        </h3>
+                    </div>
+
+                    <div class="cyber">
+                        <div class="card">
+                            <div class="conteneur_logo_card">
+                                <img class="logo_card" src="/img/cybersecu.png" alt="Logo SLAM">
+                            </div>
+                            <h1 class="title_card">Cybersécurité</h1>
+                            <div class="bar1"></div>
+                            <h3 class="text">
+                                La cybersécurité a été ajoutée pour les deux spécialités et fait maintenant entièrement partie du programme. Son fonctionnement consiste à créer quelque chose de sécurisé que se soit pour les SLAM, un programme sécurisé ou un site web sécurisé ou encore pour les SISR, une infrastructure sécurisée contre les attaques informatique.
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- BTS SIO -->
+
+            <!-- Alexis WALLEZ -->
+            <div id="moi" class="tabcontent">
+                <div class="contener_card_title">
+                    <div class="card_title1">
+                        <div class="conteneur_logo_card">
+                            <img class="logo_card" src="/img/user.png" alt="Logo User">
+                        </div>
+                        <h1 class="title_card">Alexis WALLEZ</h1>
+                        <div class="bar1"></div>
+                        <div class="logo">
+                            <div class="conteneur_logo">
+                                <a href="https://www.linkedin.com/in/alexis-wallez/" target="_blank">
+                                    <img class="logo_card" src="/img/linkedin.png" alt="Logo Linkedin">
+                                </a>
+                            </div>
+                            <div class="conteneur_logo">
+                                <a href="/CV/index.html" target="_blank">
+                                    <h5 class="logo_cv">CV</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contener_card">
+                    <div class="card">
+                        <h1 class="title_card">À propos</h1>
+                        <div class="bar1"></div>
+                        <h3>
+                            Passionné d'informatique depuis toujours.
+                            Actuellement en 1ère année de BTS SIO SLAM
+                            et en alternance en tant que développeur informatique chez LessonSharing
+                        </h3>
+
+                    </div>
+
+                    <div class="card">
+                        <h1 class="title_card">Profil</h1>
+                        <div class="bar1"></div>
+                        <h3 class="text">
+                            Âge : 20
+                        <br>
+                            Prénom : Alexis
+                        <br>
+                            Nom : WALLEZ
+                        <br>
+                            Niveau d'étude : BAC
+                        <br>
+                            Téléphone : +33 6 49 28 06 73
+                        <br>
+                            Mail : wallezalexis@gmail.com
+                        <br>
+                            Ville : Savigny-le-Temple, France
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Alexis WALLEZ -->
+
+            <!-- Entreprise Presentation -->
+            <div id="entreprise_presentation" class="tabcontent">
+                <div class="contener_card_title">
+                    <div class="card_title">
+                        <div class="conteneur_logo_card">
+                            <img class="logo_card" src="/img/logo entreprise.png" alt="Logo User">
+                        </div>
+                        <h1 class="title_card">LessonSharing</h1>
+                        <div class="bar1"></div>
+                        <h3 class="text">
+                            LESSONSHARING SARL pratique son domaine d’activité dans plusieurs pays au monde dont la France où l’activité principale est exercée. Les différents domaines pratiqués dans les grands titres en informatique.
+                        </h3>
+                        <div class="logo">
+                            <div class="conteneur_logo">
+                                <a href="https://fr.linkedin.com/company/lessonsharing-sas/" target="_blank">
+                                    <img class="logo_card" src="/img/linkedin.png" alt="Logo Linkedin">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contener_card">
+                    <div class="card">
+                        <h1 class="title_card">Développement</h1>
+                        <div class="bar1"></div>
+                        <h3 class="text">
+                            Développement des logiciels sur-mesure selon leurs besoin. Par exemple si une entreprise souhaite avoir un logiciel de facturation spécifique ou encore un logiciel avec des calcules précises.
+                        </h3>
+                    </div>
+                    <div class="card">
+                        <h1 class="title_card">Infrastructures</h1>
+                        <div class="bar1"></div>
+                        <h3 class="text">
+                            Proposer aux différents types d’entreprises (PME, SARL, Auto entrepreneur etc...) la mise en place des infrastructures selon leurs besoin et leurs budget. Peu importe la taille d’une infrastructure, la couche de sécurité physique et logiciel est systématiquement prise en compte. Cette mise en place permet aux entreprises d’avoir une infrastructure non seulement sécurisée mais aussi très puissante sur le long terme.
+                        </h3>
+                    </div>
+                    <div class="card">
+                        <h1 class="title_card">Cybersécurité</h1>
+                        <div class="bar1"></div>
+                        <h3 class="text">
+                            Mise en place des différents systèmes et matériels en réseau de haut niveau pour des entreprises privées et gouvernementales. Une sécurité avec plusieurs couches physiques et logiciels pour éviter toute intrusion et piratage venant d’extérieur ou d’intérieur.
+                        </h3>
+                    </div>
+                    <div class="card">
+                        <h1 class="title_card">Formation</h1>
+                        <div class="bar1"></div>
+                        <h3 class="text">
+                            Disposant de plusieurs formateurs compétents dans le domaine de l’informatique. Ces formateurs sont placés dans des écoles et des entreprises afin de former des personnes ayants des différents niveau en informatique.
+                        </h3>
+                    </div>
+                    <div class="card">
+                        <h1 class="title_card">Cloud sécurisé</h1>
+                        <div class="bar1"></div>
+                        <h3 class="text">
+                            Le site lessonsharing.fr propose aussi une plateforme hébergement de fichier et collaboration qui est utilisé dans la monde par des particuliers, des entreprises ou encore des écoles et des facultés.
+                        </h3>
+                        <div class="conteneur_logo">
+                            <a href="https://www.lessonsharing.fr/" target="_blank">
+                                <img class="logo_card" src="/img/lessonsharing-logo-white-alpha.png" alt="Logo LessonSharing">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h1 class="title_card">Gestion de parc</h1>
+                        <div class="bar1"></div>
+                        <h3 class="text">
+                            Reprendre un parc informatique, proposer des améliorations système, logiciel ou physique.
+                        </h3>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Entreprise Presentation -->
+
+            <!-- Projet Entreprise -->
+            <div id="entreprise_projet" class="tabcontent">
+                <div class="contener_card_title">
+                    <div class="card_title">
+                        <div class="conteneur_logo_card">
+                            <img class="logo_card" src="/img/logo entreprise.png" alt="Logo User">
+                        </div>
+                        <h1 class="title_card">Projets entreprise</h1>
+                        <div class="bar1"></div>
+                        <button><a href="">Grille des compétences</a></button>
+                    </div>
+                </div>
+                <div class="contener_card">
+                    <div class="card">
+                        <h1 class="title_card">Projet</h1>
+                        <div class="bar1"></div>
+                        <h3 class="text">
+                            text
+                        </h3>
+                        <div class="conteneur_logo">
+                            <a href="" target="_blank">
+                                <h5 class="logo_cv">PDF</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h1 class="title_card">Projet</h1>
+                        <div class="bar1"></div>
+                        <h3 class="text">
+                            text
+                        </h3>
+                        <div class="conteneur_logo">
+                            <a href="" target="_blank">
+                                <h5 class="logo_cv">PDF</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h1 class="title_card">Projet</h1>
+                        <div class="bar1"></div>
+                        <h3 class="text">
+                            text
+                        </h3>
+                        <div class="conteneur_logo">
+                            <a href="" target="_blank">
+                                <h5 class="logo_cv">PDF</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h1 class="title_card">Projet</h1>
+                        <div class="bar1"></div>
+                        <h3 class="text">
+                            text
+                        </h3>
+                        <div class="conteneur_logo">
+                            <a href="" target="_blank">
+                                <h5 class="logo_cv">PDF</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h1 class="title_card">Projet</h1>
+                        <div class="bar1"></div>
+                        <h3 class="text">
+                            text
+                        </h3>
+                        <div class="conteneur_logo">
+                            <a href="" target="_blank">
+                                <h5 class="logo_cv">PDF</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h1 class="title_card">Projet</h1>
+                        <div class="bar1"></div>
+                        <h3 class="text">
+                            text
+                        </h3>
+                        <div class="conteneur_logo">
+                            <a href="" target="_blank">
+                                <h5 class="logo_cv">PDF</h5>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Projet Entreprise -->
+
+            <!-- Projet Formation -->
+            <div id="formation_projet" class="tabcontent">
+                <div class="contener_card_title">
+                    <div class="card_title">
+                        <div class="conteneur_logo_card">
+                            <h1 class="logo_bts">BTS</h1>
+                        </div>
+                        <h1 class="title_card">Projets Formation</h1>
+                        <div class="bar1"></div>
+                        <button><a href="">Grille des compétences</a></button>
+                    </div>
+                </div>
+                <div class="contener_card">
+                    <div class="card">
+                        <h1 class="title_card">Debian</h1>
+                        <div class="bar1"></div>
+                        <h3 class="text">
+                            Installation de Debian
+                        </h3>
+                        <div class="conteneur_logo">
+                            <a href="" target="_blank">
+                                <h5 class="logo_cv">PDF</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h1 class="title_card">Projet</h1>
+                        <div class="bar1"></div>
+                        <h3 class="text">
+                            text
+                        </h3>
+                        <div class="conteneur_logo">
+                            <a href="" target="_blank">
+                                <h5 class="logo_cv">PDF</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h1 class="title_card">Projet</h1>
+                        <div class="bar1"></div>
+                        <h3 class="text">
+                            text
+                        </h3>
+                        <div class="conteneur_logo">
+                            <a href="" target="_blank">
+                                <h5 class="logo_cv">PDF</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h1 class="title_card">Projet</h1>
+                        <div class="bar1"></div>
+                        <h3 class="text">
+                            text
+                        </h3>
+                        <div class="conteneur_logo">
+                            <a href="" target="_blank">
+                                <h5 class="logo_cv">PDF</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h1 class="title_card">Projet</h1>
+                        <div class="bar1"></div>
+                        <h3 class="text">
+                            text
+                        </h3>
+                        <div class="conteneur_logo">
+                            <a href="" target="_blank">
+                                <h5 class="logo_cv">PDF</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h1 class="title_card">Projet</h1>
+                        <div class="bar1"></div>
+                        <h3 class="text">
+                            text
+                        </h3>
+                        <div class="conteneur_logo">
+                            <a href="" target="_blank">
+                                <h5 class="logo_cv">PDF</h5>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Projet Formation -->
+
+            <!-- Veilles Technologiques -->
+            <div id="technologie" class="tabcontent">
+                <div class="contener_card_title">
+                    <div class="card_title">
+                        <div class="conteneur_logo_card">
+                            <img class="logo_card" src="/img/technologie.PNG" alt="Logo technologie">
+                        </div>
+                        <h1 class="title_card">Veilles Technologiques</h1>
+                        <div class="bar1"></div>
+                    </div>
+                </div>
+                <div class="contener_card">
+                    <div class="card">
+                        <h1 class="title_card">Veille</h1>
+                        <div class="bar1"></div>
+                        <h3>
+                            Text
+                        </h3>
+                        <div class="conteneur_logo">
+                            <a href="" target="_blank">
+                                <h5 class="logo_cv">PDF</h5>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h1 class="title_card">Veille</h1>
+                        <div class="bar1"></div>
+                        <h3 class="text">
+                        Text
+                        </h3>
+                        <div class="conteneur_logo">
+                            <a href="" target="_blank">
+                                <h5 class="logo_cv">PDF</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Veilles Technologiques -->
+
+            <!-- Veilles Juridiques -->
+            <div id="juridique" class="tabcontent">
+                <div class="contener_card_title">
+                    <div class="card_title">
+                        <div class="conteneur_logo_card">
+                            <img class="logo_card" src="/img/juridique.PNG" alt="Logo juridique">
+                        </div>
+                        <h1 class="title_card">Veilles Technologiques</h1>
+                        <div class="bar1"></div>
+                    </div>
+                </div>
+                <div class="contener_card_title">
+                    <div class="card" style="padding-top: 20px;">
+                        <h1 class="title_card">Veille</h1>
+                        <div class="bar1"></div>
+                        <h3 class="text">
+                            Text
+                            </h3>
+                        <div class="conteneur_logo">
+                            <a href="" target="_blank">
+                                <h5 class="logo_cv">PDF</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Veilles Juridiques -->
+
+        </div>
+
+        <div class="menu display_none" id="menu">
+
+            <div class="menu_all">
+                <div class="conteneur_close">
+                    <div class="close" >
+                        <span id="croix" class="croix">&#10006</span>
+                    </div>
+                </div>
+
+                <div class="contener_menu">
+                    <div class="text_menu">
+                        <h3>Entreprise :</h3>
+                        <button class="tablinks" onclick="openCity(event, 'entreprise_presentation'); close_menu();"><h3>Présentation</h3></button>
+                        <button class="tablinks" onclick="openCity(event, 'entreprise_projet'); close_menu();"><h3>Projets</h3></button>
+                    </div>
+
+                    <div class="bar"></div>
+
+                    <div class="text_menu menu_formation">
+                        <h3>Formation :</h3>
+                        <button class="tablinks" onclick="openCity(event, 'formation_projet'); close_menu();"><h3>Projets</h3></button>
+                        <div class="bar1"></div>
+                        <button class="tablinks" onclick="openCity(event, 'bts'); close_menu();"><h3>BTS SIO</h3></button>
+                    </div>
+
+                    <div class="bar"></div>
+
+                    <div class="text_menu">
+                        <h3>Veilles :</h3>
+                        <button class="tablinks" onclick="openCity(event, 'technologie'); close_menu();"><h3>Technologiques</h3></button>
+                        <button class="tablinks" onclick="openCity(event, 'juridique'); close_menu();"><h3>Juridiques</h3></button>
+                    </div>
+                </div>
+                <div class="bar1"></div>
+            </div>
+
+        </div>
+
+
+        <footer>
+            <!-- Burger -->
+            <div class="conteneurBurger" id="burger">
+                <div class="burger"></div>
+                <div class="burger"></div>
+                <div class="burger"></div>
+            </div>
+            <!-- Burger -->
+
+            <div class="bar"></div>
+
+            <div class="name">
+                <a class="tablinks" onclick="openCity(event, 'moi'); close_menu();">Alexis WALLEZ</a>
+            </div>
+            <div class="bar"></div>
+            <a class="tablinks" onclick="openCity(event, 'acceuil'); close_menu();">Acceuil</a>
+        </footer>
+        <script src="./anime.js"></script>
+    </body>
+
+</html>
