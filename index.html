@@ -45,6 +45,7 @@
                     <ul>
                         <li><a id="text2">Formation</a>
                             <ul class="dropdown2 display_none drop" id="drop2" aria-label="submenu">
+                                <li><a class="tablinks" onclick="openCity(event, 'formation_presentation'); close_drop();">Présentation</a></li>
                                 <li><a class="tablinks" onclick="openCity(event, 'formation_projet'); close_drop();">Projets</a></li>
                                 <div class="close">
                                     <span class="croix2 croix">&#10006</span>
@@ -82,7 +83,7 @@
                     <div class="conteneur_logo_card">
                         <img class="logo_card" src="/img/sac.PNG" alt="Logo SLAM">
                     </div>
-                    <h1 class="title_card">Protfolio</h1>
+                    <h1 class="title_card">Portfolio</h1>
                     <div class="bar1"></div>
                     <div class="conteneur_text">
                         <h1 class="text">
@@ -180,7 +181,7 @@
                         <div class="bar1"></div>
                         <h3>
                             Passionné d'informatique depuis toujours.
-                            Actuellement en 1ère année de BTS SIO SLAM
+                            Actuellement en 2ème année de BTS SIO SLAM
                             et en alternance en tant que développeur informatique chez LessonSharing
                         </h3>
 
@@ -282,6 +283,45 @@
                 </div>
             </div>
             <!-- Entreprise Presentation -->
+
+            <!-- Formation Presentation -->
+            <div id="formation_presentation" class="tabcontent">
+                <div class="contener_card_title">
+                    <div class="card_title">
+                        <div class="conteneur_logo_card">
+                            <img class="logo_card" src="/img/ecole.PNG" alt="Logo User">
+                        </div>
+                        <h1 class="title_card">IPSSI - Paris</h1>
+                        <div class="bar1"></div>
+                        <h3 class="text">
+                            L’IPSSI est une école d’Informatique, Web et Marketing Digital reconnue aussi bien pour les diplômes qu’elle délivre que par les entreprises du secteur de l’informatique.
+                            Du BTS SIO au Bac+5, l’IPSSI propose ses formations en alternance dès la 2e année, permettant à l’étudiant de combiner enseignement de haut niveau,
+                            financement de ses études (pris en charge par l’entreprise d’accueil), expérience professionnelle et rémunération.
+                            <br><br>
+                            Toutes les filières de l’IPSSI délivrent des diplômes reconnus par l’Etat (niveaux 1, 2 et 3).
+                            <br>
+                            Plaçant la pédagogie, les relations entreprises et l’innovation au cœur de son expertise,
+                            l'IPSSI dispose de 3 campus à Paris, Marne-la-Vallée et Saint-Quentin-en-Yvelines et compte ouvrir un 4ème campus à l'international, à Toronto au Canada.
+                            <br><br>
+                            Les programmes de formation, Systèmes & Réseaux, Développement Web, Mobile et Logiciel, Design Graphique, Digital Marketing et IT Manager,
+                            s'adaptent aux évolutions technologiques et aux tendances métiers. Des sciences de l’ingénierie à l’architecture matérielle et logicielle en passant par les technologies web et digitales.
+                        </h3>
+                        <div class="logo">
+                            <div class="conteneur_logo">
+                                <a href="https://www.linkedin.com/school/ipssi/" target="_blank">
+                                    <img class="logo_card" src="/img/linkedin.png" alt="Logo Linkedin">
+                                </a>
+                            </div>
+                            <div class="conteneur_logo">
+                                <a href="https://ecole-ipssi.com/?utm_source=linkedin&utm_medium=smo&utm_campaign=BRAND_pres_ipssi" target="_blank">
+                                    <img class="logo_card" src="/img/images.png" alt="Logo IPSSI">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Formation Presentation -->
 
             <!-- Projet Entreprise -->
             <div id="entreprise_projet" class="tabcontent">
@@ -387,10 +427,10 @@
                 </div>
                 <div class="contener_card">
                     <div class="card">
-                        <h1 class="title_card">Debian</h1>
+                        <h1 class="title_card">Projet</h1>
                         <div class="bar1"></div>
                         <h3 class="text">
-                            Installation de Debian
+                            Text
                         </h3>
                         <div class="conteneur_logo">
                             <a href="" target="_blank">
@@ -554,6 +594,7 @@
 
                     <div class="text_menu menu_formation">
                         <h3>Formation :</h3>
+                        <button class="tablinks" onclick="openCity(event, 'formation_presentation'); close_menu();"><h3>Présentation</h3></button>
                         <button class="tablinks" onclick="openCity(event, 'formation_projet'); close_menu();"><h3>Projets</h3></button>
                         <div class="bar1"></div>
                         <button class="tablinks" onclick="openCity(event, 'bts'); close_menu();"><h3>BTS SIO</h3></button>
