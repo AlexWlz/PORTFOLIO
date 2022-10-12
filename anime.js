@@ -1,5 +1,5 @@
 function openCity(evt, name) {
-  var i, tabcontent, tablinks;
+  let i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
@@ -18,17 +18,15 @@ document.getElementById("defaultOpen").click();
 // Calculer la largeur du body
 
 const widthOutput = document.querySelector('body');
-var header = document.querySelector("header");
-var footer = document.querySelector("footer");
+let header = document.querySelector("header");
+let footer = document.querySelector("footer");
 
 function reportWindowSize() {
   widthOutput.contains = window.innerWidth;
-  const style = getComputedStyle(header)
-  const style1 = getComputedStyle(footer)
 
   //des que la largeur change enlever les dropdown et le menu et le fond
-  var drop = document.querySelectorAll(".dropdown");
-  var fond = document.querySelector('.op')
+  let drop = document.querySelectorAll(".dropdown");
+  let fond = document.querySelector('.op')
 
   drop.forEach(element => element.classList.add("display_none") && element.classList.remove("display_flex"))
 
@@ -36,7 +34,7 @@ function reportWindowSize() {
   fond.classList.remove("display_block")
 
 
-  var menu = document.querySelector(".menu");
+  let menu = document.querySelector(".menu");
   menu.classList.add("display_none")
   menu.classList.remove("display_flex")
 
@@ -55,9 +53,9 @@ window.addEventListener('resize', reportWindowSize);
 
 // afficher le menu quand click sur le burgeur
 function menu(e) {
-  var menu = document.querySelector(".menu");
-  var footer = document.querySelector("footer");
-  var fond = document.querySelector('.op')
+  let menu = document.querySelector(".menu");
+  let footer = document.querySelector("footer");
+  let fond = document.querySelector('.op')
 
   if(menu.classList.contains("display_none")){
 
@@ -83,9 +81,9 @@ function menu(e) {
 }
 
 function close_menu(){
-  var menu = document.querySelector(".menu");
-  var footer = document.querySelector("footer");
-  var fond = document.querySelector('.op')
+  let menu = document.querySelector(".menu");
+  let footer = document.querySelector("footer");
+  let fond = document.querySelector('.op')
   menu.classList.add("display_none")
   menu.classList.remove("display_flex")
 
@@ -97,12 +95,12 @@ function close_menu(){
 
 
 function drope1(){
-  var drop1 = document.querySelector(".dropdown1")
-  var fond = document.querySelector(".op")
+  let drop1 = document.querySelector(".dropdown1")
+  let fond = document.querySelector(".op")
   const style = getComputedStyle(drop1)
 
-  var drop2 = document.querySelector(".dropdown2")
-  var drop3 = document.querySelector(".dropdown3")
+  let drop2 = document.querySelector(".dropdown2")
+  let drop3 = document.querySelector(".dropdown3")
 
   if(style.display == "none"){
     drop1.classList.add("display_flex")
@@ -127,12 +125,12 @@ function drope1(){
 }
 
 function drope2(){
-  var drop2 = document.querySelector(".dropdown2")
-  var fond = document.querySelector(".op")
+  let drop2 = document.querySelector(".dropdown2")
+  let fond = document.querySelector(".op")
   const style2 = getComputedStyle(drop2)
 
-  var drop1 = document.querySelector(".dropdown1")
-  var drop3 = document.querySelector(".dropdown3")
+  let drop1 = document.querySelector(".dropdown1")
+  let drop3 = document.querySelector(".dropdown3")
 
   if(style2.display == "none"){
     drop2.classList.add("display_flex")
@@ -157,12 +155,12 @@ function drope2(){
 }
 
 function drope3(){
-  var drop3 = document.querySelector(".dropdown3")
-  var fond = document.querySelector(".op")
+  let drop3 = document.querySelector(".dropdown3")
+  let fond = document.querySelector(".op")
   const style3 = getComputedStyle(drop3)
 
-  var drop1 = document.querySelector(".dropdown1")
-  var drop2 = document.querySelector(".dropdown2")
+  let drop1 = document.querySelector(".dropdown1")
+  let drop2 = document.querySelector(".dropdown2")
 
   if(style3.display == "none"){
     drop3.classList.add("display_flex")
@@ -187,9 +185,9 @@ function drope3(){
 }
 
 function close_drop1(){
-  var drop1 = document.querySelector(".dropdown1")
+  let drop1 = document.querySelector(".dropdown1")
 
-  var fond = document.querySelector(".op")
+  let fond = document.querySelector(".op")
 
   drop1.classList.remove("display_flex")
   drop1.classList.add("display_none")
@@ -200,9 +198,9 @@ function close_drop1(){
 }
 
 function close_drop2(){
-  var drop2 = document.querySelector(".dropdown2")
+  let drop2 = document.querySelector(".dropdown2")
 
-  var fond = document.querySelector(".op")
+  let fond = document.querySelector(".op")
 
   drop2.classList.remove("display_flex")
   drop2.classList.add("display_none")
@@ -213,9 +211,9 @@ function close_drop2(){
 }
 
 function close_drop3(){
-  var drop3 = document.querySelector(".dropdown3")
+  let drop3 = document.querySelector(".dropdown3")
 
-  var fond = document.querySelector(".op")
+  let fond = document.querySelector(".op")
 
   drop3.classList.remove("display_flex")
   drop3.classList.add("display_none")

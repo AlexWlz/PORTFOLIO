@@ -29,6 +29,13 @@
 
                 <div class="conteneurDrop">
                     <ul>
+                        <li><a class="tablinks" onclick="openCity(event, 'apprentissage'); close_drop();">Apprentissage</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="conteneurDrop">
+                    <ul>
                         <li><a id="text1">Entreprise</a>
                             <ul class="dropdown1 display_none drop" id="drop1" aria-label="submenu">
                                 <li><a class="tablinks" onclick="openCity(event, 'entreprise_presentation'); close_drop();">Présentation</a></li>
@@ -97,6 +104,26 @@
             </div>
             <!-- Acceuil -->
 
+             <!-- Apprentissage -->
+             <div id="apprentissage" class="tabcontent">
+                <div class="card">
+                    <div class="conteneur_logo_card">
+                        <img class="logo_card" src="/img/sac.PNG" alt="Logo SLAM">
+                    </div>
+                    <h1 class="title_card">Portfolio</h1>
+                    <div class="bar1"></div>
+                    <div class="conteneur_text">
+                        <h1 class="text">
+                            BTS SIO SLAM
+                        </h1>
+                        <h1 class="text">
+                            2021 - 2023
+                        </h1>
+                    </div>
+                </div>
+            </div>
+            <!-- Apprentissage -->
+
             <!-- BTS SIO -->
             <div id="bts" class="tabcontent">
                 <div class="contener_card_title">
@@ -162,6 +189,11 @@
                         <h1 class="title_card">Alexis WALLEZ</h1>
                         <div class="bar1"></div>
                         <div class="logo">
+                            <div class="conteneur_logo">
+                                <a href="https://github.com/AlexWlz" target="_blank"
+                                  ><img class="logo_card" src="./img/github.png" alt="Logo github"
+                                /></a>
+                              </div>
                             <div class="conteneur_logo">
                                 <a href="https://www.linkedin.com/in/alexis-wallez/" target="_blank">
                                     <img class="logo_card" src="/img/linkedin.png" alt="Logo Linkedin">
@@ -332,7 +364,7 @@
                         </div>
                         <h1 class="title_card">Projets entreprise</h1>
                         <div class="bar1"></div>
-                        <button><a href="">Grille des compétences</a></button>
+                        <button><a href="./Tableau_de_synthese_Epreuve_E4.xlsx">Grille des compétences</a></button>
                     </div>
                 </div>
                 <div class="contener_card">
@@ -422,18 +454,31 @@
                         </div>
                         <h1 class="title_card">Projets Formation</h1>
                         <div class="bar1"></div>
-                        <button><a href="">Grille des compétences</a></button>
+                        <button><a href="./Tableau_de_synthese_Epreuve_E4.xlsx">Grille des compétences</a></button>
                     </div>
                 </div>
                 <div class="contener_card">
                     <div class="card">
-                        <h1 class="title_card">Projet</h1>
+                        <h1 class="title_card">AP1</h1>
                         <div class="bar1"></div>
                         <h3 class="text">
-                            Text
+                            Création d'une entreprise fictive
+                            <br> 
+                            RRL Info
                         </h3>
+                        <div class="btn_projet">
+                            <a href="./Projet/Formation/mentions_legales.pdf" target="_blank">
+                                <button>Mentions légales</button>
+                            </a>
+                            <a href="./Projet/Formation/KBIS_RRL_info.pdf" target="_blank">
+                                <button>Kbis</button>
+                            </a>
+                            <a href="./Projet/Formation/Fiche-de-poste-développeur-web.pdf" target="_blank">
+                                <button>Fiche de poste</button>
+                            </a>
+                        </div>
                         <div class="conteneur_logo">
-                            <a href="" target="_blank">
+                            <a href="./Projet/Formation/Presentation RRL Info.pdf" target="_blank">
                                 <h5 class="logo_cv">PDF</h5>
                             </a>
                         </div>
@@ -582,33 +627,47 @@
                         <span id="croix" class="croix">&#10006</span>
                     </div>
                 </div>
-
                 <div class="contener_menu">
+
                     <div class="text_menu">
-                        <h3>Entreprise :</h3>
-                        <button class="tablinks" onclick="openCity(event, 'entreprise_presentation'); close_menu();"><h3>Présentation</h3></button>
-                        <button class="tablinks" onclick="openCity(event, 'entreprise_projet'); close_menu();"><h3>Projets</h3></button>
+                        <button class="tablinks" onclick="openCity(event, 'bts'); close_menu();"><p>BTS SIO</p></button>
+                    </div>
+                    <div class="text_menu">
+                        <button class="tablinks" onclick="openCity(event, 'apprentissage'); close_menu();"><p>Apprentissage</p></button>
                     </div>
 
-                    <div class="bar"></div>
-
-                    <div class="text_menu menu_formation">
-                        <h3>Formation :</h3>
-                        <button class="tablinks" onclick="openCity(event, 'formation_presentation'); close_menu();"><h3>Présentation</h3></button>
-                        <button class="tablinks" onclick="openCity(event, 'formation_projet'); close_menu();"><h3>Projets</h3></button>
+                    <div class="text_menu">
                         <div class="bar1"></div>
-                        <button class="tablinks" onclick="openCity(event, 'bts'); close_menu();"><h3>BTS SIO</h3></button>
                     </div>
+                    <div class="text_contenair">
+                        <div class="text_menu menu_formation">
+                            <h3>Entreprise :</h3>
+                            <button class="tablinks" onclick="openCity(event, 'entreprise_presentation'); close_menu();"><p>Présentation</p></button>
+                            <button class="tablinks" onclick="openCity(event, 'entreprise_projet'); close_menu();"><p>Projets</p></button>
+                        </div>
 
-                    <div class="bar"></div>
+                            <div class="bar"></div>
+
+                        <div class="text_menu menu_formation">
+                            <h3>Formation :</h3>
+                            <button class="tablinks" onclick="openCity(event, 'formation_presentation'); close_menu();"><p>Présentation</p></button>
+                            <button class="tablinks" onclick="openCity(event, 'formation_projet'); close_menu();"><p>Projets</p></button>
+                        </div>
+                    </div>
+                    <div class="text_menu">
+                        <div class="bar1"></div>
+                    </div>
 
                     <div class="text_menu">
                         <h3>Veilles :</h3>
-                        <button class="tablinks" onclick="openCity(event, 'technologie'); close_menu();"><h3>Technologiques</h3></button>
-                        <button class="tablinks" onclick="openCity(event, 'juridique'); close_menu();"><h3>Juridiques</h3></button>
+                        <button class="tablinks" onclick="openCity(event, 'technologie'); close_menu();"><p>Technologiques</p></button>
+                        <button class="tablinks" onclick="openCity(event, 'juridique'); close_menu();"><p>Juridiques</p></button>
                     </div>
                 </div>
-                <div class="bar1"></div>
+                <div class="text_menu">
+                    <div class="bar1"></div>
+                </div>
+                </div>
             </div>
 
         </div>
