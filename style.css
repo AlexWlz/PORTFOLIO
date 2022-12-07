@@ -639,8 +639,15 @@ textarea {
 #formation_projet button {
   margin: 20px;
 }
-#formation_projet .card {
-  height: auto;
+#formation_projet .card, #entreprise_projet .card {
+  height: 310px;
+}
+
+#formation_projet .card h3, #entreprise_projet .card h3 {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #technologie .card_title {
@@ -705,6 +712,7 @@ textarea {
   color: rgba(0, 0, 0, 0.6);
   font-size: medium;
 }
+
 
 
 .btn_projet {
