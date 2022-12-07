@@ -163,6 +163,8 @@ button:hover {
   display: flex;
   align-items: center;
   position: absolute;
+  top: 28px;
+  left: -10px;
   margin-top: 17px;
   flex-direction: column;
   border-radius: 0 0px 3px 3px;
@@ -179,6 +181,8 @@ button:hover {
   display: flex;
   align-items: center;
   position: absolute;
+  top: 28px;
+  left: -10px;
   margin-top: 17px;
   flex-direction: column;
   border-radius: 0 0px 3px 3px;
@@ -195,6 +199,8 @@ button:hover {
   display: flex;
   align-items: center;
   position: absolute;
+  top: 28px;
+  left: -40px;
   margin-top: 17px;
   flex-direction: column;
   border-radius: 0 0px 3px 3px;
@@ -633,30 +639,11 @@ textarea {
   height: auto;
 }
 
-#formation_projet .card_title {
-  width: 100%;
-}
-#formation_projet button {
-  margin: 20px;
-}
-#formation_projet .card, #entreprise_projet .card {
-  height: 310px;
-}
-
-#formation_projet .card h3, #entreprise_projet .card h3 {
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 #technologie .card_title {
   padding-bottom: 30px;
   width: 100%;
 }
-#technologie .card {
-  height: auto;
-}
+
 #juridique .card_title {
   padding-bottom: 30px;
   width: 1120px;
@@ -713,18 +700,38 @@ textarea {
   font-size: medium;
 }
 
-
-
 .btn_projet {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.btn_projet button{
+.btn_projet button {
   margin: 10px 5px 0px 5px !important;
 }
 
+#formation_projet .card_title {
+  width: 100%;
+}
+#formation_projet button {
+  margin: 20px;
+}
+#formation_projet .card,
+#entreprise_projet .card,
+#technologie .card,
+#juridique .card {
+  height: 310px;
+}
+
+#formation_projet .card h3,
+#entreprise_projet .card h3,
+#technologie .card h3,
+#juridique .card h3 {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 @media screen and (max-width: 745px) {
   .conteneurBurger {
     display: block;
